@@ -13,6 +13,8 @@ primes = f(600851475143)
 for item in primes:
     print(f'{item} is a prime factor')
 
+
+###################################
 '''
 First Attempt
 Generate prime numbers

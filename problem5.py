@@ -24,14 +24,24 @@ print(result)
 '''
 
 # Attempt 2
+
 numlist=list(range(2,11))
-primelist = [2,3,5]
+primelist = [2,3,5,7,11]
 newlist = []
-x=0
 for num in numlist:
-    if num % (primelist[0]) == 0:
-        newlist.append(num//(primelist[0]))
-        x += 1
-    else:
-        x += 1
+    for n in primelist:
+        if num % n == 0:
+            newlist.append(num)
+            break
 print(newlist)
+
+# Attempt 3
+""" i = 1
+for k in (range(1, 11)): 
+    for j in range(1, 11): 
+      if (i*j) % k == 0: 
+        i *= j 
+        break 
+
+print(i)
+ """
